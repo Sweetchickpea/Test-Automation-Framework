@@ -28,7 +28,7 @@ public class TestBase {//parent of all test class
 			
 			@Optional("chrome") String browser,
 			@Optional("false") boolean isLambdaTest,
-			@Optional("true")boolean isHeadless, ITestResult result) {
+			@Optional("false")boolean isHeadless, ITestResult result) {
 		
 		this.isLambdaTest= isLambdaTest;
 		WebDriver lambdaDriver;
@@ -56,6 +56,6 @@ public class TestBase {//parent of all test class
 		if(isLambdaTest) {
 			LambdaTestUtility.quitSession();//quit on lambdatest
 		}else {
-		//homePage.quit();
-	}
-}}
+		//homePage.quit;
+	}}
+}
